@@ -55,10 +55,10 @@ class App extends React.Component {
               <Route exact path='/trip/:id' component={Trip} />
               {/* TODO - add more routes for other views */}
               <Route exact path='/info' component={Info} />
-              <Route exact path='*' component={NotFound} />
               <Route exact path='/countries' component={Countries} />
               <Route exact path='/country/:id' component={Country} />
               <Route exact path='/regions' component={Regions} />
+              <Route exact path='*' component={NotFound} />
             </Switch>
           </AnimatedSwitch>
         </MainLayout>
