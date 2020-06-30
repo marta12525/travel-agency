@@ -1,15 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import OrderSummary from '../OrderSummary/OrderSummary';
 import OrderOption from '../OrderOption/OrderOption';
 import Button from '../../common/Button/Button';
 import settings from '../../../data/settings';
 import { formatPrice } from '../../../utils/formatPrice';
 import { calculateTotal } from '../../../utils/calculateTotal';
-
 import pricing from '../../../data/pricing.json';
-
 import {Row, Col} from 'react-flexbox-grid';
 
 const sendOrder = (options, tripCost, tripId, tripName, countryCode) => {

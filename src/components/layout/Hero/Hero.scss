@@ -6,9 +6,11 @@
   background: $color-dark;
   margin: 0 0 ($base-size * 5) 0;
   overflow: hidden;
+
   &.small {
     min-height: ($base-size * 25)
   }
+  
   @include p-el('before') {
     content: '';
     width: 100%;

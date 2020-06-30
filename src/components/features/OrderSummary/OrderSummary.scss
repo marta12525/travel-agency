@@ -3,6 +3,7 @@
 .component {
   position: relative;
   margin: ($base-size * 2) 0;
+  
   @include p-el('before') {
     content: '';
     width: ($base-size * 4);

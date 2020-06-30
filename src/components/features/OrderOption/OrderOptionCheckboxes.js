@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import styles from './OrderOption.scss';
-import {formatPrice} from '../../../utils/formatPrice';
+import { formatPrice } from '../../../utils/formatPrice';
 
 const newValueSet = (currentValue, id, checked) => {
   if(checked){

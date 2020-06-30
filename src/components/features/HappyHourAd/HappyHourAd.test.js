@@ -1,5 +1,5 @@
 import React from 'react';
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme';
 import HappyHourAd from './HappyHourAd';
 
 const select = {
@@ -32,7 +32,6 @@ describe('Component HappyHourAd', () => {
   it('should recive title and promoDescription from props', () => {
     const component = shallow(<HappyHourAd {...mockProps} />);
     expect(component.find(select.title).text()).toEqual(mockProps.title);
-    //expect(component.find(select.description).text()).toBeTruthy;
   });
 });
 

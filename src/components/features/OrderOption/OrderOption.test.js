@@ -1,5 +1,5 @@
 import React from 'react';
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme';
 import OrderOption from './OrderOption';
 import DatePicker from 'react-datepicker';
 
@@ -61,7 +61,6 @@ const testValueNumber = 3;
 
 for(let type in optionTypes){
   describe(`Component OrderOption with type=${type}`, () => {
-    /* test setup */
     let component;
     let subcomponent;
     let renderedSubcomponent;
@@ -81,17 +80,14 @@ for(let type in optionTypes){
       renderedSubcomponent = subcomponent.dive();
     });
 
-    /* common tests */
     it('passes dummy test', () => {
       expect(1).toBe(1);
       console.log(component.debug());
 
     });
 
-    /* type-specific tests */
     switch (type) {
       case 'dropdown': {
-        /* tests for dropdown */
         it('contains select and options', () => {
           const select = renderedSubcomponent.find('select');
           expect(select.length).toBe(1);
@@ -113,7 +109,6 @@ for(let type in optionTypes){
         break;
       }
       case 'icon': {
-        /* tests for icon */
         it('should render div with class icon', () => {
           const classIcon = renderedSubcomponent.find('.icon .icon');
           expect(classIcon.length).toBe(2);

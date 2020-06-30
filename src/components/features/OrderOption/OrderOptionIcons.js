@@ -1,11 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import styles from './OrderOption.scss';
-
-import {formatPrice} from '../../../utils/formatPrice';
+import { formatPrice } from '../../../utils/formatPrice';
 import Icon from '../../common/Icon/Icon';
-
 
 const OrderOptionIcons = ({values, required, currentValue, setOptionValue}) => (
   <div className={styles.icon}>

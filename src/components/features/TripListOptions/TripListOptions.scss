@@ -30,6 +30,7 @@
 
 .toggle {
   cursor: pointer;
+  
   &:focus {
     outline: 1px solid $color-light;
   }

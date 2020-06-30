@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 import Section from '../../layout/Section/Section';
 import PageTitle from '../../common/PageTitle/PageTitle';
 import CountrySummary from '../../features/CountrySummary/CountrySummary';
-
 import styles from './Regions.scss';
-import {Grid, Row} from 'react-flexbox-grid';
+import { Grid, Row } from 'react-flexbox-grid';
 
 const Regions = ({regions, subregions, countries}) => (
 

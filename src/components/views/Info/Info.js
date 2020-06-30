@@ -4,7 +4,7 @@ import Section from '../../layout/Section/Section';
 import PageTitle from '../../common/PageTitle/PageTitle';
 import List from '../../common/List/List';
 import ListItem from '../../common/ListItem/ListItem';
-import {Grid, Row, Col} from 'react-flexbox-grid';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
 class Info extends React.Component {
   render() {
