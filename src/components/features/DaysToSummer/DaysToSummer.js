@@ -9,11 +9,11 @@ const DaysToSummer = ({ days }) => (
       <span>{days} days till summer</span>
     )}
 
-    {(days <= 0 && days != 1) && (
+    {(days <= 0 && days !== 1) && (
       <span>It&apos;s summer!!!</span>
     )}
 
-    {days == 1 && (
+    {days === 1 && (
       <span>It&apos;s only 1 day till summer!</span>
     )}
   </div>
