@@ -1,13 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import DaysToSummer from './DaysToSummer';
+import { mockProps } from './DaysToSummer.test.mock';
 
 const select = {
   title: '.title',
-};
-
-const mockProps = {
-  days: 10,
 };
 
 describe('Component DaysToSummer', () => {

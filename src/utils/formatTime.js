@@ -1,6 +1,6 @@
 export const formatTime = seconds => {
 
-  if (seconds == null || isNaN(seconds) || seconds < 0) {
+  if (seconds == null || Number.isNaN(seconds) || seconds < 0) {
     return null;
   } else {
     let date = new Date(null);
